@@ -12,6 +12,7 @@ Após clonar o projeto use os dois comandos para construir a imagem
 cd datastone_project
 docker build -t datastone-api .
 docker run -p 8000:8000 datastone-api
+```
 
 É possível ver o enpoint acessando `http://0.0.0.0:8000/docs`
 
@@ -21,7 +22,7 @@ Após clonar o projeto use os dois comandos para construir a imagem
 cd datastone_project
 docker build -t datastone-api-tests -f Dockerfile.test .
 docker run -it --rm datastone-api-tests
-
+```
 ### Convertendo Moedas
 
 Endpoint: `/convert_currency`
