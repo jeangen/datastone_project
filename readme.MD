@@ -29,7 +29,7 @@ Endpoint: `/convert_currency`
   - `to_currency`: A moeda de destino (por exemplo, "BRL").
   - `rate`: O valor a ser convertido.
 
-Exemplo de corpo da requisição:
+Exemplos de corpo da requisição e do retorno:
 ```json
 {
     "from_currency": "USD",
@@ -37,8 +37,6 @@ Exemplo de corpo da requisição:
     "rate": 100
 }
 
-Exemplo de corpo de retorno:
-```json
 {
     "from_currency": "USD",
     "to_currency": "BRL",
