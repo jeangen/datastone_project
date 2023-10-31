@@ -8,12 +8,16 @@ Para usar a API, você pode fazer requisições HTTP para os seguintes endpoints
 
 ## Execução
 Após clonar o projeto use os dois comandos para construir a imagem
+```bash
 cd datastone_project
 docker build -t datastone-api .
 docker run -p 8000:8000 datastone-api
 
+É possível ver o enpoint acessando `http://0.0.0.0:8000/docs`
+
 ## Execução dos testes 
 Após clonar o projeto use os dois comandos para construir a imagem
+```bash
 cd datastone_project
 docker build -t datastone-api-tests -f Dockerfile.test .
 docker run -it --rm datastone-api-tests
