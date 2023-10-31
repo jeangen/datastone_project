@@ -22,7 +22,7 @@ docker run -it --rm datastone-api-tests
 
 Endpoint: `/convert_currency`
 
-#### Requisição e Retorno
+### Requisição e Retorno
 - **Método**: POST
 - **Corpo da Requisição (JSON)**:
   - `from_currency`: A moeda de origem (por exemplo, "USD").
@@ -37,17 +37,11 @@ Exemplo de corpo da requisição:
     "rate": 100
 }
 
-- **Corpo do Retorno (JSON)**:
-  - `from_currency`: A moeda de origem (por exemplo, "USD").
-  - `to_currency`: A moeda de destino (por exemplo, "BRL").
-  - `rate`: O valor a ser convertido.
-  - `converted_rate`: O valor convertido.
-
-Exemplo de corpo do retorno:
+Exemplo de corpo de retorno:
 ```json
 {
     "from_currency": "USD",
     "to_currency": "BRL",
     "rate": 100,
-    "converted_rate": 550
+    "converted_rate": 550,
 }
